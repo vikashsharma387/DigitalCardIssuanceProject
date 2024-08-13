@@ -7,15 +7,21 @@
   <null name="startup_services"/>
   <null name="shutdown_services"/>
   <null name="replication_services"/>
-  <null name="requires"/>
+  <record name="requires" javaclass="com.wm.util.Values">
+    <value name="OnPremCardIssuanceSFDCServices">1.0</value>
+    <value name="WmSalesforceRESTProvider">10.7.0.0.95</value>
+    <value name="customCobrandingService">1.0</value>
+  </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">1</value>
+  <value name="build">5</value>
   <null name="description"/>
   <value name="created_date">12-08-2024 06:04:27 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2024-08-12T06:04:30.010686907Z</value>
+  <value name="lastUpdated">2024-08-12T12:57:05.995113636Z</value>
+  <value name="wmProjectId">fl18bcbd972a167406149223</value>
+  <value name="creator">Vikash Sharma</value>
 </Values>

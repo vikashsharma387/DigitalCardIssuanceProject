@@ -8,17 +8,57 @@ packages:
   gitUsername: vikashsharma387
   gitBranch: main
 - name: OnPremCardIssuanceSFDCServices
+  version: "1.0"
   gitServerName: VikashgithubRepo
   gitUrl: https://github.com/vikashsharma387
   gitUsername: vikashsharma387
   gitBranch: main
 - name: WmSalesforceRESTProvider
+  version: 10.7.0.0.95
   gitServerName: VikashgithubRepo
   gitUrl: https://github.com/vikashsharma387
   gitUsername: vikashsharma387
   gitBranch: main
 - name: customCobrandingService
+  version: "1.0"
   gitServerName: VikashgithubRepo
   gitUrl: https://github.com/vikashsharma387
   gitUsername: vikashsharma387
   gitBranch: main
+services:
+- serviceName: project.digitalcardissuance.integrations:CreateCustomerCaseinSFDC
+  packages:
+  - name: DigitalCardIssuanceProject
+    version: "1.0"
+  - name: customCobrandingService
+    version: "1.0"
+  - name: OnPremCardIssuanceSFDCServices
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.95
+- serviceName: CardIssuanceSFDCServices.flowservices:createSFDCcase
+  packages:
+  - name: OnPremCardIssuanceSFDCServices
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1134
+- serviceName: wm.server.admin:getServerHost
+  packages:
+  - name: WmRoot
+    version: 11.1.0.0.1134
+- serviceName: cardIssuance.connectorService:createCase
+  packages:
+  - name: DigitalCardIssuanceProject
+    version: "1.0"
+  - name: customCobrandingService
+    version: "1.0"
+  - name: OnPremCardIssuanceSFDCServices
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 10.7.0.0.95
+- serviceName: pub.flow:getLastError
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1134

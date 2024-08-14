@@ -30,6 +30,11 @@ packages:
   gitUrl: https://github.com/vikashsharma387
   gitUsername: vikashsharma387
   gitBranch: main
+- name: DeliveryPartner
+  gitServerName: VikashgithubRepo
+  gitUrl: https://github.com/vikashsharma387
+  gitUsername: vikashsharma387
+  gitBranch: main
 services:
 - serviceName: project.digitalcardissuance.integrations:CreateCustomerCaseinSFDC
   packages:

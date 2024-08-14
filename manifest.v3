@@ -11,17 +11,18 @@
     <value name="OnPremCardIssuanceSFDCServices">1.0</value>
     <value name="WmSalesforceRESTProvider">10.7.0.0.95</value>
     <value name="customCobrandingService">1.0</value>
+    <value name="OnpremWebMethodsCardIssuanceConnections">1.0</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">7</value>
+  <value name="build">8</value>
   <null name="description"/>
   <value name="created_date">12-08-2024 06:04:27 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2024-08-13T04:32:40.070876577Z</value>
+  <value name="lastUpdated">2024-08-14T07:33:38.919430445Z</value>
   <value name="wmProjectId">fl18bcbd972a167406149223</value>
   <value name="creator">Vikash Sharma</value>
 </Values>
